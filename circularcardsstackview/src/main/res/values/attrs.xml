@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularCardsStackView">
+        <!-- Stroke color for CardView. -->
+        <attr name="stackCardStrokeColor" format="reference|color" />
+        <!-- Background color for CardView. -->
+        <attr name="stackCardBackgroundColor" format="reference|color" />
+        <!-- Corner radius for CardView. -->
+        <attr name="stackCardCornerRadius" format="dimension" />
+        <!-- Stroke width for CardView. -->
+        <attr name="stackCardStrokeWidth" format="dimension" />
+        <!-- ChildView padding for CardView. -->
+        <attr name="stackCardChildPadding" format="dimension" />
+        <!-- Font color for primary text -->
+        <attr name="primaryTextColor" format="reference|color" />
+        <!-- Font color for secondary text -->
+        <attr name="secondaryTextColor" format="reference|color" />
+        <!-- Font family for primary text -->
+        <attr name="primaryTextFontFamily" format="string" />
+        <!-- Font family for secondary text -->
+        <attr name="secondaryTextFontFamily" format="string" />
+        <!-- Text size for primary text -->
+        <attr name="primaryTextSize" format="dimension" />
+        <!-- Text size for secondary text -->
+        <attr name="secondaryTextSize" format="dimension" />
+        <!-- Background color for profile view -->
+        <attr name="profileViewBackgroundColor" format="reference|color" />
+        <!-- ChildView height. -->
+        <attr name="childViewHeight" format="dimension" />
+        <!-- Action option visibility. -->
+        <attr name="actionOptionsVisibility" format="boolean" />
+    </declare-styleable>
+
+</resources>

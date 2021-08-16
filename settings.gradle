@@ -1,0 +1,3 @@
+rootProject.name = "CardStackView"
+include ':app'
+include ':circularcardsstackview'
