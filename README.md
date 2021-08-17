@@ -1,9 +1,10 @@
 ![holly-stratton-Acn1Y0sb4QU-unsplash (2)](/media/feature_image.jpg)
 
 # CircularCardsStackView
+[![](https://jitpack.io/v/Mindinventory/CircularCardsStackView.svg)](https://jitpack.io/#Mindinventory/CircularCardsStackView)
 - CircularCardsStackView is an Android library for dealing with swipeable card view.
 
-[![](https://jitpack.io/v/Mindinventory/CircularCardsStackView.svg)](https://jitpack.io/#Mindinventory/CircularCardsStackView)
+
 
 ## Overview
 ![ezgif com-gif-maker (10)](/media/feature.gif)
