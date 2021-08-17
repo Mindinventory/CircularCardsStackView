@@ -1,7 +1,7 @@
 ![holly-stratton-Acn1Y0sb4QU-unsplash (2)](/media/feature_image.jpg)
 
 # CircularCardsStackView
-CircularCardsStackView is an Android library for dealing with swipeable card view.
+[![](https://jitpack.io/v/Mindinventory/CircularCardsStackView.svg)](https://jitpack.io/#Mindinventory/CircularCardsStackView)
 
 ## Overview
 ![ezgif com-gif-maker (10)](/media/feature.gif)
@@ -27,8 +27,11 @@ allprojects {
 ```
 
 - **Step 2: Add the dependency in your app module build.gradle file**
-
-
+```bash
+dependencies {
+	        implementation 'com.github.Mindinventory:CircularCardsStackView:0.0.2'
+	}
+```
 ### Implementation
 - **Step 1: Add CardCircularStackView in your xml and customize attributes**
  ```bash
