@@ -1,10 +1,7 @@
-![holly-stratton-Acn1Y0sb4QU-unsplash (2)](/media/feature_image.jpg)
+<a href="https://www.mindinventory.com/?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries"><img src="https://github.com/Sammindinventory/MindInventory/blob/main/Banner.png"></a>
 
 # CircularCardsStackView
 [![](https://jitpack.io/v/Mindinventory/CircularCardsStackView.svg)](https://jitpack.io/#Mindinventory/CircularCardsStackView)
-- CircularCardsStackView is an Android library for dealing with swipeable card view.
-
-
 
 ## Overview
 ![ezgif com-gif-maker (10)](/media/feature.gif)
@@ -140,4 +137,10 @@ It would be great for us if the reporter can share the below things to understan
 CircularCardsStackView is [MIT-licensed](/LICENSE).
 
 ## Let us know!
-We’d be really happy if you send us links to your projects where you use our component. Just send an email to sales@mindinventory.com And do let us know if you have any questions or suggestions regarding our work.
+If you use our open-source libraries in your project, please make sure to credit us and Give a star to www.mindinventorycom
+
+<p><h4>Please feel free to use this component and Let us know if you are interested to building Apps or Designing Products.</h4>
+<a href="https://www.mindinventory.com/contact-us.php?utm_source=gthb&utm_medium=repo&utm_campaign=swift-ui-libraries">
+<img src="https://github.com/Sammindinventory/MindInventory/blob/main/hirebutton.png" width="203" height="43"  alt="app development">
+</a>
+
