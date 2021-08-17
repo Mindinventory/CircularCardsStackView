@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CircularCardsStackView</string>
-    <string name="discover_people">Discover People</string>
+    <string name="find_friend">Find Your Friend</string>
+    <string name="hi_paul_wick">Hi, Paul Wick</string>
 </resources>

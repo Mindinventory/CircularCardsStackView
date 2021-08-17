@@ -60,11 +60,11 @@ class CircularCardsStackView(context: Context, attrs: AttributeSet) :
         cardStackAdapter = CardStackAdapter(
             cardStrokeColor = typedArray.getColor(
                 R.styleable.CircularCardsStackView_stackCardStrokeColor,
-                ContextCompat.getColor(context, R.color.colorPink)
+                ContextCompat.getColor(context, R.color.white)
             ),
             cardBackgroundColor = typedArray.getColor(
                 R.styleable.CircularCardsStackView_stackCardBackgroundColor,
-                ContextCompat.getColor(context, R.color.colorExtraLightPink)
+                ContextCompat.getColor(context, R.color.white)
             ),
             primaryTextColor = typedArray.getColor(
                 R.styleable.CircularCardsStackView_primaryTextColor,
@@ -76,7 +76,7 @@ class CircularCardsStackView(context: Context, attrs: AttributeSet) :
             ),
             profileViewBackgroundColor = typedArray.getColor(
                 R.styleable.CircularCardsStackView_profileViewBackgroundColor,
-                ContextCompat.getColor(context, R.color.colorLightPink)
+                ContextCompat.getColor(context, R.color.white)
             ),
             cardStrokeWidth = typedArray.getDimension(
                 R.styleable.CircularCardsStackView_stackCardStrokeWidth,
@@ -84,11 +84,11 @@ class CircularCardsStackView(context: Context, attrs: AttributeSet) :
             ).roundToInt(),
             cardCornerRadius = typedArray.getDimension(
                 R.styleable.CircularCardsStackView_stackCardCornerRadius,
-                resources.getDimension(R.dimen._30sdp)
+                resources.getDimension(R.dimen._20sdp)
             ),
             cardChildPadding = typedArray.getDimension(
                 R.styleable.CircularCardsStackView_stackCardChildPadding,
-                resources.getDimension(R.dimen._10sdp)
+                resources.getDimension(R.dimen._15sdp)
             ).roundToInt(),
             primaryTextSize = typedArray.getDimensionPixelSize(
                 R.styleable.CircularCardsStackView_primaryTextSize,
@@ -100,7 +100,7 @@ class CircularCardsStackView(context: Context, attrs: AttributeSet) :
             ),
             childViewHeight = typedArray.getDimensionPixelSize(
                 R.styleable.CircularCardsStackView_childViewHeight,
-                resources.getDimensionPixelSize(R.dimen._250sdp)
+                resources.getDimensionPixelSize(R.dimen._300sdp)
             ),
             actionOptionsVisibility = typedArray.getBoolean(
                 R.styleable.CircularCardsStackView_actionOptionsVisibility,
@@ -194,7 +194,7 @@ class CircularCardsStackView(context: Context, attrs: AttributeSet) :
                 4.0f
             }
             in 2000..2500 -> {
-                3.7f
+                3.3f
             }
             in 2500..3000 -> {
                 3.0f

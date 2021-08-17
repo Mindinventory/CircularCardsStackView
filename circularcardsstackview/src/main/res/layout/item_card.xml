@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#00000000"
-        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
         app:cardElevation="@dimen/_3sdp"
         app:cardPreventCornerOverlap="false"
         app:cardUseCompatPadding="true"
@@ -28,8 +28,8 @@
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/ivProfileImage"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_250sdp"
-                android:scaleType="fitXY"
+                android:layout_height="@dimen/_300sdp"
+                android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -80,35 +80,33 @@
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/btnOptionFirst"
-                    android:layout_width="@dimen/_26sdp"
-                    android:layout_height="@dimen/_26sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/app_name"
-                    android:scaleType="fitCenter"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btnOptionSecond"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@drawable/ic_message" />
+                    tools:src="@drawable/ic_chat_action" />
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/btnOptionSecond"
-                    android:layout_width="@dimen/_26sdp"
-                    android:layout_height="@dimen/_26sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_15sdp"
                     android:layout_marginBottom="@dimen/_5sdp"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/app_name"
-                    android:scaleType="fitCenter"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/btnOptionFirst"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@drawable/ic_heart" />
+                    tools:src="@drawable/ic_favorite_action" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

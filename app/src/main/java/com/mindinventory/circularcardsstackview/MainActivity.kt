@@ -1,10 +1,6 @@
 package com.mindinventory.circularcardsstackview
 
-import android.os.Build
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowInsets
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.mindinventory.circularcardsstackview.data.CardModel
 import com.mindinventory.circularcardsstackview.listener.CardActionListener
@@ -60,8 +56,8 @@ class MainActivity : AppCompatActivity() {
      */
     private fun setupCardActions() {
         binding.cardStack.setActionOptions(
-            firstButtonResourceId = R.drawable.ic_message,
-            secondButtonResourceId = R.drawable.ic_heart,
+            firstButtonResourceId = R.drawable.ic_chat_action,
+            secondButtonResourceId = R.drawable.ic_favorite_action,
             object : CardActionListener {
                 override fun onFirstButtonOptionClick(position: Int) {
 
@@ -79,6 +75,13 @@ class MainActivity : AppCompatActivity() {
      */
     private fun getItemList(): ArrayList<CardModel> {
         return ArrayList<CardModel>().apply {
+            add(
+                CardModel(
+                    primaryTitle = "Marry Martin",
+                    secondaryTitle = "Chicago, USA",
+                    image = "https://i.ibb.co/8Bc6hwX/Rectangle-9.png"
+                )
+            )
             add(
                 CardModel(
                     primaryTitle = "Pamela",

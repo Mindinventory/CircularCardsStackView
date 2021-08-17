@@ -1,10 +1,10 @@
-![holly-stratton-Acn1Y0sb4QU-unsplash (2)](https://user-images.githubusercontent.com/87471481/129560159-a52838ed-b933-4df8-ab39-30069d8ba91a.jpg)
+![holly-stratton-Acn1Y0sb4QU-unsplash (2)](/media/feature_image.jpg)
 
 # CircularCardsStackView
 CircularCardsStackView is an Android library for dealing with swipeable card view.
 
 ## Overview
-![ezgif com-gif-maker (10)](https://user-images.githubusercontent.com/87471481/129571548-27526691-7488-4952-8b3e-871541c60a5c.gif)
+![ezgif com-gif-maker (10)](/media/feature.gif)
 
 ## Features
 - Android 11 support 
@@ -34,21 +34,21 @@ allprojects {
  ```bash
 <com.mindinventory.circularcardsstackview.ui.CircularCardsStackView
         android:id="@+id/cardStack"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:actionOptionsVisibility="true"
         app:childViewHeight="@dimen/_250sdp"
         app:primaryTextColor="@android:color/white"
         app:primaryTextFontFamily="@font/roboto_bold"
         app:primaryTextSize="@dimen/_16ssp"
-        app:profileViewBackgroundColor="@color/colorLightPink"
+        app:profileViewBackgroundColor="#80000000"
         app:secondaryTextColor="@android:color/white"
         app:secondaryTextFontFamily="@font/roboto_medium"
         app:secondaryTextSize="@dimen/_14ssp"
-        app:stackCardBackgroundColor="@color/colorExtraLightPink"
-        app:stackCardChildPadding="@dimen/_10sdp"
-        app:stackCardCornerRadius="@dimen/_40sdp"
-        app:stackCardStrokeColor="@color/colorPink"
+        app:stackCardBackgroundColor="@color/white"
+        app:stackCardChildPadding="@dimen/_15sdp"
+        app:stackCardCornerRadius="@dimen/_20sdp"
+        app:stackCardStrokeColor="@color/white"
         app:stackCardStrokeWidth="@dimen/_2sdp"  />
 ```
 
@@ -89,12 +89,12 @@ cardStack.setActionOptions(
 
 |            Attribute           | Description                                              | Default       |
 | ------------------------------ | -------------------------------------------------------- | :-----------: |
-| **stackCardBackgroundColor**   | The background color of the card                         | #FFE3E8       |
-| **stackCardChildPadding**      | The padding of the card's child view                     | _10sdp        |
-| **stackCardCornerRadius**      | The corner radius of the card                            | _40sdp        |
-| **stackCardStrokeColor**       | The stroke color of the card                             | #FF647F       |
+| **stackCardBackgroundColor**   | The background color of the card                         | white         |
+| **stackCardChildPadding**      | The padding of the card's child view                     | _15sdp        |
+| **stackCardCornerRadius**      | The corner radius of the card                            | _30sdp        |
+| **stackCardStrokeColor**       | The stroke color of the card                             | white         |
 | **stackCardStrokeWidth**       | The stroke width of the card                             | _2sdp         |
-| **profileViewBackgroundColor** | The background color of profile view                     | #FF92A5       |
+| **profileViewBackgroundColor** | The background color of profile view                     | #80000000     |
 | **childViewHeight**            | The height of the child view of the card                 | _250sdp       |
 | **actionOptionsVisibility**    | Manage the visibility of the actions of the card         | true          |
 | **primaryTextColor**           | The text color of the primary text of the profile view   | white         |

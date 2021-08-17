@@ -9,8 +9,4 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorLightBlack">#90000000</color>
 
-    <color name="colorPink">#FF647F</color>
-    <color name="colorLightPink">#FF92A5</color>
-    <color name="colorExtraLightPink">#FFE3E8</color>
-
 </resources>

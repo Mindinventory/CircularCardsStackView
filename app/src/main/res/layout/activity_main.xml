@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/colorLightBlue">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clHeader"
@@ -15,22 +15,34 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_vertical"
+            android:text="@string/hi_paul_wick"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
             android:gravity="center_vertical"
-            android:text="@string/discover_people"
-            android:textColor="@color/black"
+            android:text="@string/find_friend"
+            android:textColor="@color/colorText"
             android:textSize="@dimen/_22ssp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/tvUser"
+            app:layout_constraintTop_toBottomOf="@+id/tvUser" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_notifications"
+            android:src="@drawable/ic_notification"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,20 +61,20 @@
         app:primaryTextColor="@android:color/white"
         app:primaryTextFontFamily="@font/roboto_bold"
         app:primaryTextSize="@dimen/_16ssp"
-        app:profileViewBackgroundColor="@color/colorLightPink"
+        app:profileViewBackgroundColor="#80000000"
         app:secondaryTextColor="@android:color/white"
         app:secondaryTextFontFamily="@font/roboto_medium"
         app:secondaryTextSize="@dimen/_14ssp"
-        app:stackCardBackgroundColor="@color/colorExtraLightPink"
-        app:stackCardChildPadding="@dimen/_10sdp"
-        app:stackCardCornerRadius="@dimen/_40sdp"
-        app:stackCardStrokeColor="@color/colorPink"
+        app:stackCardBackgroundColor="@color/white"
+        app:stackCardChildPadding="@dimen/_15sdp"
+        app:stackCardCornerRadius="@dimen/_20sdp"
+        app:stackCardStrokeColor="@color/white"
         app:stackCardStrokeWidth="@dimen/_2sdp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/_15sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/bg_white_rounded_rect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -74,9 +86,21 @@
             android:background="@null"
             android:src="@drawable/ic_home"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/icFavorite"
+            app:layout_constraintEnd_toStartOf="@+id/icChatMain"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/icChatMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/ic_chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/icFavorite"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/icHome"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
@@ -86,33 +110,21 @@
             android:background="@null"
             android:src="@drawable/ic_favorite"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/icSearch"
+            app:layout_constraintEnd_toStartOf="@+id/icProfile"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/icHome"
+            app:layout_constraintStart_toEndOf="@+id/icChatMain"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/icSearch"
+            android:id="@+id/icProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
-            android:src="@drawable/ic_search"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/icSetting"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/icFavorite"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/icSetting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:src="@drawable/ic_settings"
+            android:src="@drawable/ic_profile"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/icSearch"
+            app:layout_constraintStart_toEndOf="@+id/icFavorite"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
