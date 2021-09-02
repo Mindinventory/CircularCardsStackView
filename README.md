@@ -26,6 +26,18 @@ allprojects {
     }
 ```
 
+ **or**
+    
+If Android studio version is Arctic Fox then add it in your settings.gradle:
+```bash
+ dependencyResolutionManagement {
+    		repositories {
+        		...
+        		maven { url 'https://jitpack.io' }
+    		}
+	   }
+```
+
 - **Step 2: Add the dependency in your app module build.gradle file**
 ```bash
 dependencies {
